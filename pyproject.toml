@@ -1,0 +1,10 @@
+[project]
+name = "opux-to-csv"
+version = "0.1.0"
+description = "將 1Password 1PUX 格式轉換為 Apple CSV 格式"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+opux-to-csv = "main:main"
