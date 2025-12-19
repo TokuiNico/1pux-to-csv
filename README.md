@@ -1,10 +1,10 @@
-# opux-to-csv
+# 1pux-to-csv
 
 將 1Password 的 1PUX 格式轉換為 Apple CSV 格式的工具
 
 ## 簡介
 
-`opux-to-csv` 是一個 Python 工具，用於將 1Password 匯出的 1PUX（1Password Unencrypted Export）格式檔案轉換為 Apple CSV 格式，方便匯入到其他密碼管理工具或進行資料備份。
+`1pux-to-csv` 是一個 Python 工具，用於將 1Password 匯出的 1PUX（1Password Unencrypted Export）格式檔案轉換為 Apple CSV 格式，方便匯入到其他密碼管理工具或進行資料備份。
 
 本工具基於 [1Password 1PUX 格式文件](https://support.1password.com/1pux-format/) 實作，支援解析 1PUX ZIP 檔案中的 `export.data` JSON 結構。
 
@@ -30,7 +30,7 @@
 ```bash
 # 克隆專案
 git clone <repository-url>
-cd opux-to-csv
+cd 1pux-to-csv
 
 # 使用 uv 執行（無需安裝）
 uv run python main.py --help
@@ -41,7 +41,7 @@ uv run python main.py --help
 ```bash
 # 克隆專案
 git clone <repository-url>
-cd opux-to-csv
+cd 1pux-to-csv
 
 # 直接執行
 python main.py --help
@@ -112,7 +112,7 @@ Notes 欄位會自動合併以下資訊，不同區段之間使用 `---` 分隔�
 ## 專案結構
 
 ```text
-opux-to-csv/
+1pux-to-csv/
 ├── main.py              # 主要轉換邏輯
 ├── pyproject.toml       # 專案設定檔
 └── README.md           # 本檔案
